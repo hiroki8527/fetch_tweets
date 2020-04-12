@@ -68,7 +68,7 @@ You would send HTTP request like this.
 $ curl -H "Accept: application/json" -X GET http://<your_localhost>/users/realdonaldtrump?limit=10
 ```
 
-### Test Flask by pytest
+### Test apis and methods by pytest
 ```bash
 $ cd tests/
 
