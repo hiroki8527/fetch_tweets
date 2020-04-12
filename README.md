@@ -58,14 +58,14 @@ $ curl -H "Accept: application/json" -X GET http://<your_localhost>/hashtags/sta
 ### format
 $ curl -H "Accept: application/json" -X GET http://<your_localhost>/users/[screen_name]?limit=[limit]
 ```
-You can choose [screen_name] and [limit]r.
+You can choose [screen_name] and [limit].
 
 screen_name is @xxxxxxx in twitter.
 So, if you want to Get the list of tweets of [Donald J. Trump](https://twitter.com/realdonaldtrump).
 You would send HTTP request like this.
 ```bash
 ### (example)
-$ curl -H "Accept: application/json" -X GET http://<your_localhost>/users/realdonaldtrump?limit=10
+$ curl -H "Accept: application/json" -X GET http://<your_localhost>/users/realDonaldTrump?limit=10
 ```
 
 ### Test apis and methods by pytest
