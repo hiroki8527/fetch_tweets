@@ -1,7 +1,7 @@
 # fetch-tweets
 ## Setup
 - This API is created with Python and Flask
-- pytest is used for testing Flask application
+- We use pytest for test
 
 ### Prerequisites
 - Python 3.x
