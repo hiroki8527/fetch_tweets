@@ -1,11 +1,13 @@
 # fetch-tweets
 ## Setup
-- This API is created with Python and Flask
-- We use pytest for test
+- This API is created with *Python and Flask*
+- We use *pytest* for test
 
 ### Prerequisites
 - Python 3.x
-- Authentication tokens of twitter(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)  Read [this](https://developer.twitter.com/ja/docs/basics/getting-started)
+- Authentication tokens of twitter(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)  
+
+Read [this](https://developer.twitter.com/ja/docs/basics/getting-started)
 
 ### Set your Twitter ACCESS_TOKEN
 ```bash
@@ -35,7 +37,7 @@ $  FLASK_APP=api.py flask run
 ### Send HTTP request using curl
 Open another console window
 
-- [1] Get the list of tweets with the given hashtag
+- *[1] Get the list of tweets with the given hashtag*
 ```bash
 ### format
 $ curl -H "Accept: application/json" -X GET http://<your_localhost>/hashtags/[keyword]?limit=[limit]
@@ -50,7 +52,7 @@ $ curl -H "Accept: application/json" -X GET http://<your_localhost>/hashtags/pyt
 ### (example2)
 $ curl -H "Accept: application/json" -X GET http://<your_localhost>/hashtags/stayhome?limit=30
 ```
-- [2] Get the list of tweets that the user has on his feed
+- *[2] Get the list of tweets that the user has on his feed*
 
 ```bash
 ### format
