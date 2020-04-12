@@ -23,6 +23,11 @@ def get_tweets_by_screen_name(screen_name):
     limit = common.set_limit(request.args.get("limit"), DEFAULT_LIMIT_NUMBER)
     api = common.set_tweepy_api()
     result = []
-    for status in api.user_timeline(screen_name = screen_name, count = limit, tweet_mode = "extended"):
-        result.append(common.generate_json_about_tweet(status))
-    return jsonify(result)
+    try:
+        user_timeline = api.user_timeline(screen_name = screen_name, count = limit, tweet_mode = "extended")
+    except:
+        return jsonify({ "error_message" : "The account does not exist or is a private account" })
+    else:
+        for status in user_timeline:
+            result.append(common.generate_json_about_tweet(status))
+        return jsonify(result)
