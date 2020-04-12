@@ -16,7 +16,7 @@ $ pip install pytest
 ### Run API
 Open console window
 ```bash
-$ cd script
+$ cd script/
 
 $ ls
 __pycache__  api.py  common.py
@@ -35,6 +35,7 @@ Open another console window
 $ curl -H "Accept: application/json" -X GET http://<your_localhost>/hashtags/[keyword]?limit=[limit]
 ```
 You can choose [keyword] and [limit].
+keyword is a word you want to search.
 
 ```bash
 ### (example1)
@@ -72,7 +73,6 @@ $ pytest
 
 ### test separately
 $ pytest <file_name>
-
 ### example
 $ pytest test_parse_hashtags.py
 ```
