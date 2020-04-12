@@ -5,6 +5,13 @@
 
 ### Prerequisites
 - Python 3.x
+- Authentication tokens of twitter(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+  Read [this](https://developer.twitter.com/ja/docs/basics/getting-started)
+
+### Set your Twitter ACCESS_TOKEN
+```bash
+$ vi config/base_setting.py
+```
 
 ### Install Flask and pytest
 ```bash
